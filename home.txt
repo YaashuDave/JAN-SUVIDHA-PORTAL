@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+      </svg> -->
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>jan suvidha portal</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+        <img src="C:\Users\vrajp\Documents\Azadi\Emblem_of_India.png" alt="Emblem of India">
+        </div>
+        <div class="title">
+        <h1>JAN SEVA PORTAL</h1>    
+        <h2>Collobrate-District Gandhinagar</h2>
+        <p>Goverment Of Gujarat</p>    
+        </div>
+        <div class="logo-1">
+            <img src="C:\\Users\\vrajp\\Documents\\Azadi\\har ghar tiranga.png" alt="Har Ghar Tiranga">
+        </div>
+    </div>
+      
+        <nav>
+            <ul>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="home-btn" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                  </svg>            
+                <li><a href="#">About Us</a></li>
+                <li style="margin: 10px;"><a href="#">Apply <i class="bi bi-caret-down-fill"></i></a>
+                <div class="apply-drp">
+                    <ul>
+                      <li><a class="dropdown-item" href="#">Health</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="agriculture()">Agriculture</a></li>
+                      <li><a class="dropdown-item" href="#">Education</a></li>
+                      <li><a class="dropdown-item" href="#">Rural Development</a></li>
+                      <li><a class="dropdown-item" href="#">General</a></li>
+                    </ul>
+                </div>
+                </li>  
+                <li><a href="#">View Application</a></li>
+                <li><a href="#">Document Upload</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">SITE Map</a></li>  
+            </ul>
+            <form class="searchbar" role="search">
+                <input class="search-input" type="search" placeholder="Search" aria-label="Search">
+                <button class="search-btn" type="submit">Search</button>
+              </form>
+        </nav>
+    <div class="container" id="container"> 
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="C:\Users\vrajp\Documents\Azadi\1 momument.jpg"></div>
+      <div class="swiper-slide"><img src="C:\Users\vrajp\Documents\Azadi\2 monument.jpg"></div>
+      <div class="swiper-slide"><img src="C:\Users\vrajp\Documents\Azadi\3 monument.jpg"></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  </div>
+          </div>    
+    </div>
+    <div class="footer">
+
+    </div>
+    <script>
+        function agriculture(){
+            document.getElementById("container");
+            window.location="C:\\Users\\vrajp\\Documents\\Azadi\\agricultural.html";
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  
+});
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<div class="header">
+        <div class="logo">
+            <img src="C:\Users\vrajp\Documents\Azadi\Emblem_of_India.png" alt="Emblem of India">
+        </div>
+        <div class="title">
+            <h1>JAN SEVA PORTAL</h1>
+            <h2>Collobrate-District Gandhinagar</h2>
+            <p>Goverment Of Gujarat</p>
+        </div>
+        <div class="logo-1">
+            <img src="C:\\Users\\vrajp\\Documents\\Azadi\\har ghar tiranga.png" alt="Har Ghar Tiranga">
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="home()">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li style="margin: 10px;"><a href="#">Apply <i class="bi bi-caret-down-fill"></i></a>
+                <div class="apply-drp">
+                    <ul>
+                        <li><a class="dropdown-item" href="#">Health</a></li>
+                        <li><a class="dropdown-item" href="#">Agriculture</a></li>
+                        <li><a class="dropdown-item" href="#">Education</a></li>
+                        <li><a class="dropdown-item" href="#">Rural Development</a></li>
+                        <li><a class="dropdown-item" href="#">General</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">View Application</a></li>
+            <li><a href="#">Document Upload</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">SITE Map</a></li>
+        </ul>
+        <form class="searchbar" role="search">
+            <input class="search-input" type="search" placeholder="Search" aria-label="Search">
+            <button class="search-btn" type="submit">Search</button>
+        </form>
+    </nav>
+    <main class="container" id="container">
+        <div class="content">
+            <img src="C:\Users\vrajp\Documents\Azadi\apply\Agriculture.jpg" alt="agriculture">
+            <h1>Agricultural</h1><br>
+            <p>Gujarat is the largest producer of major cash crop like cotton, groundnut, tobacco, cumin, sesamum, etc.
+                in India. Other major crops produced are Rice, Wheat, Jowar, Bajra, Maize,Tur, and Gram. Gujarat has an
+                agricultural economy the total crop area amounts to more than one-half of the total land area. <br>
+
+                Animal husbandry and dairying have played a vital role in the rural economy of Gujarat. Dairy farming,
+                primarily concerned with milk production, functions on a cooperative basis and has more than a million
+                members. Gujarat is the largest processor of milk in India. Amul milk co-operative federation products
+                are well known all over India and is Asia's biggest dairy.[9] Among livestock raised are buffalo and
+                other cattle, sheep, and goats. As per the results of livestock census 1997, there were 209.70 lakh
+                livestock in Gujarat state. As per the estimates of the survey of major livestock products, during the
+                year 2002–03 the Gujarat produced 6.09 million tonnes of milk, 385 million eggs and 2.71 million kg of
+                wool. Gujarat also contributes inputs to industries like textiles, oil and soap.</p>
+        </div>
+
+        <div class="most-view">
+            <h2>Most Viewed</h2>
+            <hr>
+            </hr>
+            <ul class="branch">
+                <li>Website of Gandhinagar District Seeds Development Corporation</li>
+                <li>Web site of Ahmedabad jan seva portal</li>
+                <li>Information of Agricultural land in Gandhinagar</li>
+                <li>Website Of Vahan Parivahan</li><br>
+            </ul>
+
+            <h2>What's New</h2>
+            <hr>
+            </hr>
+            <ul class="branch">
+                <li>Website of Patan APMC</li>
+                <li>Website of Unja APMC</li>
+                <li>Website of Directorate of</li>
+            </ul>
+        </div>
+    </main>
+    <script src="C:\\Users\\vrajp\\Documents\\Azadi\\home.js"></script>
+
+    

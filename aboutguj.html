@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>jan suvidha portal</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img
+          src="Emblem_of_India.png"
+          alt="Emblem of India"
+        />
+      </div>
+      <div class="title">
+        <h1>JAN SUVIDHA PORTAL</h1>
+        <h2>Collobrate-District Gandhinagar</h2>
+        <p>Goverment Of Gujarat</p>
+      </div>
+      <div class="logo-1">
+        <img
+          src="har ghar tiranga.png"
+          alt="Har Ghar Tiranga"
+        />
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="home.html" id="home" onclick="home()">Home</a></li>
+        <li>
+          <a href="aboutus.html" onclick="aboutus()">About Us</a>
+          <div class="apply-drp">
+            <ul>
+              <li>
+                <a class="dropdown-item" href="objective.html" onclick="objective()"
+                  >Objective</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="achivements.html" onclick="achivements()"
+                  >Achivements</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="photo.html" onclick="photo()"
+                  >Photo Gallery</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="aboutguj.html" onclick="aboutguj()"
+                  >About Gujarat</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li style="margin: 10px">
+          <a href="#">Apply <i class="bi bi-caret-down-fill"></i></a>
+          <div class="apply-drp">
+            <ul>
+              <li>
+                <a class="dropdown-item" href="health.html" onclick="health()">Health</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="agricultural.html" onclick="agriculture()"
+                  >Agriculture</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="education.html" onclick="education()"
+                  >Education</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="development.html" onclick="development()"
+                  >Rural Development</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="general.html" onclick="general()"
+                  >General</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="aplication.html" onclick="aplication()">View Application</a></li>
+        <!-- <li><a href="#" onclick="upload()">Dash board</a></li> -->
+        <li><a href="faq.html" onclick="faq()">FAQs</a></li>
+        <li><a href="map.html" onclick="map()">SITE Map</a></li>
+      </ul>
+      <form class="searchbar" role="search">
+        <input
+          class="search-input"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="search-btn" type="submit">Search</button>
+      </form>
+    </nav>
+    <main class="container" id="container">
+      <div class="content">
+        <h2>About Gujarat</h2>
+        <img
+          src="aboutguj.jpg"
+          alt="About Gujarat"
+        />
+        <p>
+          Aavo Padharo, words of welcome in the language of Gujarat because it
+          is here that these words ring truly and the guest is 'God' and the
+          people of Gujarat are gregariously friendly, inviting and will entice
+          you to come again and again. Stretches out into the Arabian Sea, with
+          a hint of the desert and with a coastline of 1600 kms long is Gujarat
+          – the home state of Mahatma Gandhi, the Father of Nation. It is
+          renowned for its beaches, temple towns and historic capitals. Wildlife
+          sanctuaries, hill resorts and natural grandeur are gifts of Gujarat.
+          Sculpture, handicrafts, arts, festivals also make the state rich.
+          Gujarat is also among the most technologically advanced, housing the
+          largest petrochemical complex in the country. Gujarat has always been
+          a major centre for the Jains and some of its most interesting
+          locations are the Jain Temple centres at Palitana and Girnar Hills.
+          Besides the Jain temples, the state’s major attractions include the
+          only habitat of the Asiatic Lions in India (Gir Forests), a desert
+          ride at the Wild Ass Sanctuary and the beautiful Indo-Saracenic
+          Architecture of Ahmedabad. The colourful tribal villages of Kutch make
+          a visit unforgettable.<br><br>
+          A state with an amazingly varied
+          topography ranging from the deep green of the dense forests to stark
+          white at the salt plains. Its 1660 kilometers coastline is home to
+          some of the most unique marine species and geographical locations at
+          the state makes it an ideal matrix, a melting pot of a vast variety of
+          culture, people, places and history due to eons of migratory
+          influences. Along with all the migrations came in various ritual
+          practices, cuisines, style of dresses, fairs and festivals,
+          celebrations all of which were amalgamated and became a part of what
+          this amazingly diverse state has to offer to you. This was possible as
+          a result of trade, commerce and the dexterity of the people of Gujarat
+          to accept and take in and make a part of all who come in here for
+          succour, conquest or trade.
+        </p>
+      </div>
+      <div class="most-view">
+        <h2>Most Viewed</h2>
+        <ul class="branch">
+          <li>Website of Gandhinagar District Seeds Development Corporation</li>
+          <li>Web site of Ahmedabad jan seva portal</li>
+          <li>Information of Agricultural land in Gandhinagar</li>
+          <li>Website Of Vahan Parivahan</li>
+          <br />
+        </ul>
+
+        <h2>What's New</h2>
+        <ul class="branch">
+          <li>Website of Patan APMC</li>
+          <li>Website of Unja APMC</li>
+          <li>Website of Directorate of</li>
+        </ul>
+      </div>
+    </main>
+    <script src="home.js"></script>
+  </body>
+</html>

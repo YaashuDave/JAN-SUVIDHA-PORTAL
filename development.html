@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="apply.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>jan suvidha portal</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img
+          src="Emblem_of_India.png"
+          alt="Emblem of India"
+        />
+      </div>
+      <div class="title">
+        <h1>JAN SUVIDHA PORTAL</h1>
+        <h2>Collobrate-District Gandhinagar</h2>
+        <p>Goverment Of Gujarat</p>
+      </div>
+      <div class="logo-1">
+        <img
+          src="har ghar tiranga.png"
+          alt="Har Ghar Tiranga"
+        />
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="home.html" id="home" onclick="home()">Home</a></li>
+        <li>
+          <a href="aboutus.html" onclick="aboutus()">About Us</a>
+          <div class="apply-drp">
+            <ul>
+              <li>
+                <a class="dropdown-item" href="objective.html" onclick="objective()"
+                  >Objective</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="achivements.html" onclick="achivements()"
+                  >Achivements</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="photo.html" onclick="photo()"
+                  >Photo Gallery</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="aboutguj.html" onclick="aboutguj()"
+                  >About Gujarat</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li style="margin: 10px">
+          <a href="#">Apply <i class="bi bi-caret-down-fill"></i></a>
+          <div class="apply-drp">
+            <ul>
+              <li>
+                <a class="dropdown-item" href="health.html" onclick="health()">Health</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="agricultural.html" onclick="agriculture()"
+                  >Agriculture</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="education.html" onclick="education()"
+                  >Education</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="development.html" onclick="development()"
+                  >Rural Development</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="general.html" onclick="general()"
+                  >General</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="aplication.html" onclick="aplication()">View Application</a></li>
+        <!-- <li><a href="#" onclick="upload()">Dash board</a></li> -->
+        <li><a href="faq.html" onclick="faq()">FAQs</a></li>
+        <li><a href="map.html" onclick="map()">SITE Map</a></li>
+      </ul>
+
+        <form class="searchbar" role="search">
+            <input class="search-input" type="search" placeholder="Search" aria-label="Search">
+            <button class="search-btn" type="submit">Search</button>
+        </form>
+    </nav>
+    <main class="container" id="container">
+        <div class="content">
+            <img src="rural.jpg" alt="rural development">
+            <h1>Rural Development</h1><br>
+            <p>Realizing the importance of coordinated rural development, the Government of Gujarat is making continuous
+                efforts to improve rural life. And such continuous efforts have yielded good results. The basis of the
+                Gujarat development model is "public participation", which is reflected in its phrase "Sauno Saath Sauno
+                Vikas". The stories of rural development emerging from Gujarat show that the state government is raising
+                the standard of living of the people through this model.
+                <br>The state of Gujarat has effectively utilized the Mahatma Gandhi National Rural Employment Guarantee
+                Scheme (MGNREGS) funds for building sustainable and useful assets, developing the rural economy,
+                protecting the environment, empowering rural women, reducing rural-urban migration and promoting social
+                equity.
+                <br>'Mission Mangalam' is an award winning program promoting poverty alleviation and women empowerment.
+                The main objective of this is to improve the skills and status of women belonging to poor families and
+                raise their standard of living. This program is implemented by Gujarat Livelihood Promotion Company.
+            </p>
+        </div>
+
+        <table id="pbst" class="table table-striped table-bordered dataTable no-footer" role="grid"
+            aria-describedby="pbst_info">
+            <thead>
+                <tr role="row">
+                    <th style="text-align: center; font-size: 20px; width: 24.675px;" class="sorting_asc" tabindex="0"
+                        aria-controls="pbst" rowspan="1" colspan="1" aria-sort="ascending"
+                        aria-label=" Sr No. : activate to sort column descending"> Sr No. </th>
+                    <th style="text-align: center; font-size: 12px; width: 297.788px;" class="sorting" tabindex="0"
+                        aria-controls="pbst" rowspan="1" colspan="1"
+                        aria-label=" Problem statement : activate to sort column ascending"> Scheme </th>
+                    <th style="text-align: center; font-size: 12px; width: 88.775px;" class="sorting" tabindex="0"
+                        aria-controls="pbst" rowspan="1" colspan="1"
+                        aria-label=" Action : activate to sort column ascending"> Action </th>
+                    <th style="text-align: center; font-size: 12px; width: 88.775px;" class="sorting" tabindex="0"
+                        aria-controls="pbst" rowspan="1" colspan="1"
+                        aria-label=" Action : activate to sort column ascending"> Apply </th>
+                        <th style="text-align: center; font-size: 12px; width: 88.775px;" class="sorting" tabindex="0"
+                        aria-controls="pbst" rowspan="1" colspan="1"
+                        aria-label=" Action : activate to sort column ascending"> Document </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row" role="row">
+                    <td style="text-align: center;">1</td>
+                    <td style="text-align: center;">Gram Sadak Yojana</td>
+                    <td style="text-align: center;"><button id="know-more" onclick="toggle()">Know More</button></td>
+                    <td style="text-align: center;"><button id="apply" onclick="toggle1()">Apply</button></td>
+                    <td style="text-align: center;"><button id="upload" onclick="upload()">Upload</button></td>
+                </tr>
+                <tr class="row" role="row">
+                    <td style="text-align: center;">2</td>
+                    <td style="text-align: center;">Deendayal Upadhyay Gramin Kaushalya Yojana</td>
+                    <td style="text-align: center;"><button id="know-more">Know More</button></td>
+                    <td style="text-align: center;"><button id="apply">Apply</button></td>
+                    <td style="text-align: center;"><button id="upload">Upload</button></td>
+                </tr>
+                <tr class="row" role="row">
+                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">Nation Rural Livelihood Mission</td>
+                    <td style="text-align: center;"><button id="know-more">Know More</button></td>
+                    <td style="text-align: center;"><button id="apply">Apply</button></td>
+                    <td style="text-align: center;"><button id="upload">Upload</button></td>
+                </tr>
+                <tr class="row" role="row">
+                    <td style="text-align: center;">4</td>
+                    <td style="text-align: center;">Socially & Educationally Backward Class Certificate</td>
+                    <td style="text-align: center;"><button id="know-more">Know More</button></td>
+                    <td style="text-align: center;"><button id="apply">Apply</button></td>
+                    <td style="text-align: center;"><button id="upload">Upload</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="popup" id="popup">
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="width:20.654;">Name:</td>
+                        <td style="width: 700px;">Gram Sadak Yojana</td>
+                    </tr>
+                    <tr>
+                        <td style="width:20.654;">About:</td>
+                        <td style="width: 700px;">
+                            <p>
+                                Rural Road Connectivity is not only a key component of Rural Development
+                                by promoting access to economic and social services and thereby generating
+                                increased agricultural incomes and productive employment opportunities in India,
+                                it is also as a result, a key ingredient in ensuring sustainable poverty reduction.
+                                Notwithstanding the efforts made, over the years, at the State and Central levels,
+                                through different Programmes, many Habitations in the country are still not
+                                connected by All-weather roads. It is well known that even where connectivity has
+                                been provided, the roads constructed are of such quality (due to poor construction
+                                or maintenance) that they cannot always be categorised as All-weather roads.<br>
+                                With a view to redressing the situation, Government had launched the Pradhan
+                                Mantri Gram Sadak Yojana on 25th December, 2000 to provide all-weather access
+                                to eligible unconnected habitations. The Pradhan Mantri Gram Sadak Yojana 1
+                                (PMGSY) is a 100% Centrally Sponsored Scheme. ` 0.75/ liter out of the Cess on
+                                High Speed Diesel (HSD) is earmarked for this Programme.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:20.654;">Objective:</td>
+                        <td style="width: 700px;">
+                            <p>The primary objective of the PMGSY is to provide Connectivity, by way of an
+                                All-weather Road (with necessary culverts and cross-drainage structures, which
+                                is operable throughout the year), to the eligible unconnected Habitations in the
+                                rural areas with a population of 500 persons and above in Plain areas. In respect
+                                of the Hill States (North-East, Sikkim, Himachal Pradesh, Jammu & Kashmir
+                                and Uttarakhand), the Desert Areas (as identified in the Desert Development
+                                Programme), the Tribal (Schedule V) areas and Selected Tribal and Backward
+                                Districts (as identified by the Ministry of Home Affairs and Planning Commission)*
+                                the objective would be to connect eligible unconnected Habitations with a population
+                                of 250 persons and above. <br>
+                                The PMGSY will permit the Upgradation (to prescribed standards) of the
+                                existing roads in those Districts where all the eligible Habitations of the designated
+                                population size (refer Para 2.1 above) have been provided all-weather road
+                                connectivity. However, it must be noted that Upgradation is not central to the
+                                Programme.
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <button id="popup-end" onclick="toggle()">close</button>
+            </div>
+        </div>
+        <div id="login">
+            <form>
+                <label for="user-id">User-Id:</label>
+                <input type="text" id="user-id" placeholder="Enter your User-Id" required/>
+
+                <label for="person-id">person-Id:</label>
+                <input type="text" id="person-id" placeholder="Enter your person-Id"required/>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name"required/>
+
+                <label for="road">Road-Size:</label>
+                <input type="number" id="road" placeholder=""required/>
+
+                <label for="village">Village:</label>
+                <input type="text" id="village" placeholder="Enter Village name"required/>
+
+                <label for="taluka">Taluka:</label>
+                <input type="text" id="taluka" placeholder="Enter Taluka name"required/>
+
+                <label for="district">District:</label>
+                <input type="text" id="district" placeholder="Enter district name"required/>
+
+                <button id="popup-end" onclick="toggle1()">close</button>
+                <button id="popup-end">Submit</button>
+            </form>
+
+            </div>
+
+            <div id="upl">
+                <form>
+                    <input type="file" id="actual-btn" hidden />
+                    <label for="actual-btn">Sarpanch's Aadhaar Card:</label>
+                    <span id="file-chosen">No file chosen</span><br><br><br><br>
+    
+                    <input type="file" id="actual-btn1" hidden />
+                    <label for="actual-btn1">Sarpanch's pan card:</label>
+                    <span id="file-chosen1">No file chosen</span><br><br><br><br>
+    
+                    <input type="file" id="actual-btn2" hidden />
+                    <label for="actual-btn2">Raised Fund:</label>
+                    <span id="file-chosen2">No file chosen</span><br><br><br><br>
+    
+                    <input type="file" id="actual-btn3" hidden />
+                    <label for="actual-btn3">sarpanch's Photograph:</label>
+                    <span id="file-chosen3">No file chosen</span><br><br><br><br>
+    
+                    <input type="file" id="actual-btn4" hidden />
+                    <label for="actual-btn4">Sarpanch's Signature:</label>
+                    <span id="file-chosen4">No file chosen</span><br><br><br><br>
+    
+                    
+                </form>
+            
+                <div>
+                    <button id="popup-end" onclick="upload()">close</button>
+                </div>
+                <div>
+                    <button id="popup-end" onclick="submit()">Submit</button>
+                </div>
+            </div>
+    
+
+        <div class="most-view">
+            <h2>Most Viewed</h2>
+            <ul class="branch">
+                <li>Website of Gandhinagar District Seeds Development Corporation</li>
+                <li>Web site of Ahmedabad jan seva portal</li>
+                <li>Information of Agricultural land in Gandhinagar</li>
+                <li>Website Of Vahan Parivahan</li><br>
+            </ul>
+
+            <h2>What's New</h2>
+            <ul class="branch">
+                <li>Website of Patan APMC</li>
+                <li>Website of Unja APMC</li>
+                <li>Website of Directorate of</li>
+            </ul>
+        </div>
+    </main>
+    <script src="home.js"></script>
+    <script>
+        function toggle() {
+            var display = document.getElementById("grayscale");
+            display.classList.toggle('active');
+        }
+        function toggle() {
+            var popup = document.getElementById("popup");
+            popup.classList.toggle("active");
+        }
+        function toggle1() {
+            var display = document.getElementById("grayscale");
+            display.classList.toggle('active');
+        }
+        function toggle1() {
+            var login = document.getElementById("login");
+            login.classList.toggle("active");
+        }
+        function upload() {
+            var display = document.getElementById("grayscale");
+            display.classList.toggle('active');
+
+        }
+        function upload() {
+            // alert("working");
+            var upl = document.getElementById("upl");
+            upl.classList.toggle("active");
+        }
+        function submit() {
+            confirm("are you sure ypu have submitted all document correctlly ? ");
+            var display = document.getElementById("upl");
+            display.classList.toggle('active');
+        }
+    </script>
+    <script>
+        const actualBtn = document.getElementById('actual-btn');
+
+const fileChosen = document.getElementById('file-chosen');
+
+actualBtn.addEventListener('change', function () {
+    fileChosen.textContent = this.files[0].name
+});
+const actualBtn1 = document.getElementById('actual-btn1');
+
+const fileChosen1 = document.getElementById('file-chosen1');
+
+actualBtn1.addEventListener('change', function () {
+    fileChosen1.textContent = this.files[0].name
+});
+const actualBtn2 = document.getElementById('actual-btn2');
+
+const fileChosen2 = document.getElementById('file-chosen2');
+
+actualBtn2.addEventListener('change', function () {
+    fileChosen2.textContent = this.files[0].name
+});
+const actualBtn3 = document.getElementById('actual-btn3');
+
+const fileChosen3 = document.getElementById('file-chosen3');
+
+actualBtn3.addEventListener('change', function () {
+    fileChosen3.textContent = this.files[0].name
+});
+const actualBtn4 = document.getElementById('actual-btn4');
+
+const fileChosen4 = document.getElementById('file-chosen4');
+
+actualBtn4.addEventListener('change', function () {
+    fileChosen4.textContent = this.files[0].name
+});
+
+    </script>
+    
+</body>
+
+</html>
