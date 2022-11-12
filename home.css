@@ -1,0 +1,407 @@
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    width: 100%;
+    background:#fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+body#blur.active{
+    filter:grayscale(20px);
+    pointer-events: none;
+    user-select: none;
+}
+.header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    width: 80px;
+    height: 105px;
+    padding: 2.5px;
+    margin:20px 20px;
+}
+.title h1{
+    font-size: 37px;
+    margin-top: 25px;
+    padding:10px;
+    font-weight: bolder;
+}
+.title h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 32px;
+}
+.title p{
+    font-size: 15px;
+    padding-left: 80px;
+    margin-left: 37px;
+}
+.logo-1 img{
+    width: 120px;
+    height: 140px;
+    padding: 2.5px;
+    margin:10px 20px;
+}
+nav{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background: rgb(33, 33, 58);
+    justify-content: space-between;  
+}
+.home-btn{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: 15px;
+    color: white;
+}
+nav ul{
+    flex: 1;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin:10px 25px;
+    padding:10px 20px;
+    z-index: 5;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    margin-left: 20px;
+}
+nav ul li button{
+    background: rgba(251, 250, 250, 0.875);
+    padding: 11px 16px;
+    border: 1px solid rgb(33, 33, 58);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    padding: 8px;
+    margin: 8px;
+    width: 100%;
+    height: fit-content;
+}
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: fit-content;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 5;
+}
+#popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 00.5s;
+}
+.apply-drp{
+    display: none;
+}
+nav ul li:hover .apply-drp{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background:rgb(33, 33, 58);
+}
+.apply-drp ul{
+    display: block;
+    margin: 5px;
+}
+.apply-drp ul li{
+    width: 100px;
+    padding: 10px;
+}
+.apply-drp ul li a{
+    padding-left: 0px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 0px;
+}
+.container{
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    margin-top: 20px;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+    grid-template-rows: 35% 15% 30% 20%;
+    grid-gap: 33px;
+    /*display: flex;*/ 
+}
+ .swiper{
+    width: 95%;
+    height: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 50px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+.swiper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+.swiper .swiper-button-prev,.swiper .swiper-button-next{
+    color:#fff;
+}
+.banner_blocks {
+    display: block;
+    float: left;
+    width: 540px;
+    height: 330px;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'Numans', sans-serif;
+    text-align: center;
+    position: relative;
+    font-size: 12px;
+    margin-top: 50px;
+    grid-column-start:3 ;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+.villages_block {
+    display: block;
+    float: left;
+    width: 155px;
+    height: 150px;
+    margin: 0 5px 5px 0;
+    background: url(/assets/images/white_arrow_right.png) 90% 90% no-repeat  rgb(33, 33, 58);;
+    cursor: pointer;
+}
+.box_content {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    margin-top: 60px;
+}
+.map_block {
+    background-color:  rgb(33, 33, 58);;
+    display: block;
+    float: left;
+    width: 306px;
+    height: 150px;
+    margin: 0 0 5px 0;
+    position: relative;
+}
+.gujarat_map_block {
+    display: block;
+    float: right;
+    width: 160px;
+    height: 164px;
+    background: url("C:\\Users\\vrajp\\Documents\\Azadi\\gujarat1.png") center center no-repeat scroll;
+    background-size: 160px;
+}
+.map_text_block {
+    display: block;
+    float: left;
+    text-align: left;
+    margin-top: 50px;
+    width: 80px;
+    margin-left: 20px;
+}
+.map_text_block img{
+    width: 140px;
+    height: 140px;
+}
+.taluka_block {
+    background-color: rgb(33, 33, 58);
+    display: block;
+    float: left;
+    width: 155px;
+    height: 150px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.population_block {
+    background-color:  rgb(33, 33, 58);
+    display: block;
+    float: left;
+    width: 155px;
+    height: 150px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.literacy_block {
+    background-color:  rgb(33, 33, 58);
+    display: block;
+    float: left;
+    width: 155px;
+    height: 150px;
+    cursor: pointer;
+}
+.block_detail {
+    position: absolute;
+    width: 420px;
+    height: 275px;
+    background-color:  rgb(33, 33, 58);
+    display: none;
+}
+.nav flex-column{
+    width: 60%;
+    height: 80%;
+}
+.nav flex-column ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin:10px 20px;
+    padding:10px 20px;
+    z-index: 5;
+}
+.nav flex-column ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    margin-left: 20px;
+}
+.span9{
+    width: 95%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.2) ,0 6px 20px 0 rgb(0, 0, 0, 0.19); 
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.span9 p{
+    color: black;
+    margin: 7px;
+    padding: 11px;
+}
+.span9 h2{
+    font-size: 30px;
+    font-weight: 500;
+    padding-top:15px ;
+    color: black;
+    margin-left: 11px;
+}
+.span9 ul{
+    list-style: none;
+    padding: 17px;
+}
+.span9 ul li{
+    font-size: 15px;
+    font-weight: 300;
+    list-style:decimal;
+    color: black;
+    padding: 17px;
+    margin: 9px;
+}
+.span2 img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 7px;
+}
+.image_row {
+    border: 1px solid #ccc;
+    min-height: 106px;
+    width: 85%;
+    margin-top: 0px;
+    display: flex;
+    background-color: #fff;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.image_container {
+    border-left: 3px solid #ca3245;
+    float: left;
+    background-color: #fff;
+    height: 106px;
+
+}
+.img_desciption {
+    font-size: 12px;
+    display: inline-block;
+    padding: 0px 1px 0 5px;
+    height: 100px;
+    width: 227px;
+    font-family: 'Noto Sans', sans-serif;
+}
+ .inline_block {
+    display: inline-block;
+}
+ .vertical_top {
+    vertical-align: top;
+}
+ .font_color_5 {
+    color: #333;
+}
+ .font_color_6{
+    color: #666;
+}
+.most-view{
+    width: 490px;
+    height: 450px;
+    scroll-behavior: smooth;
+    overflow: scroll;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.2) ,0 6px 20px 0 rgb(0, 0, 0, 0.19) ;
+    background-color:#fff;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end:5;
+}
+.most-view h2{
+    font-size: 30px;
+    font-weight: 500;
+    padding-top:15px ;
+    color: black;
+    text-align: center;
+}
+.most-view .branch ul{
+    list-style: none;
+    padding: 17px;
+}
+.most-view .branch li{
+    font-size: 15px;
+    font-weight: 300;
+    list-style: none;
+    color: black;
+    padding: 17px;
+    margin: 9px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+
+ 

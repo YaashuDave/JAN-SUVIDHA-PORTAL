@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+      </svg> -->
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <title>jan suvidha portal</title>
+</head>
+
+<body id="blur">
+  <div class="header">
+    <div class="logo">
+      <img src="Emblem_of_India.png" alt="Emblem of India" />
+    </div>
+    <div class="title">
+      <h1>JAN SUVIDHA PORTAL</h1>
+      <h2>Collobrate-District Gandhinagar</h2>
+      <p>Goverment Of Gujarat</p>
+    </div>
+    <div class="logo-1">
+      <img src="har ghar tiranga.png" alt="Har Ghar Tiranga" />
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="home.html" id="home" onclick="home()">Home</a></li>
+      <li>
+        <a href="aboutus.html" onclick="aboutus()">About Us</a>
+        <div class="apply-drp">
+          <ul>
+            <li>
+              <a class="dropdown-item" href="objective.html" onclick="objective()"
+                >Objective</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="achivements.html" onclick="achivements()"
+                >Achivements</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="photo.html" onclick="photo()"
+                >Photo Gallery</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="aboutguj.html" onclick="aboutguj()"
+                >About Gujarat</a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin: 10px">
+        <a href="#">Apply <i class="bi bi-caret-down-fill"></i></a>
+        <div class="apply-drp">
+          <ul>
+            <li>
+              <a class="dropdown-item" href="health.html" onclick="health()">Health</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="agricultural.html" onclick="agriculture()"
+                >Agriculture</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="education.html" onclick="education()"
+                >Education</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="development.html" onclick="development()"
+                >Rural Development</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="general.html" onclick="general()"
+                >General</a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="aplication.html" onclick="aplication()">View Application</a></li>
+      <!-- <li><a href="#" onclick="upload()">Dash board</a></li> -->
+      <li><a href="faq.html" onclick="faq()">FAQs</a></li>
+      <li><a href="map.html" onclick="map()">SITE Map</a></li>
+      <li><button onclick="toggle1()" id="button">LOGIN</button></li>
+    </ul>
+     
+    </ul>
+
+  </nav>
+  <div id="popup">
+    NAME:<input type="text" name="name" id="name" placeholder="Enter your name">
+    Email:<input type="email" name="email" id="email" placeholder="abc123@gmail.com">
+    Password:<input type="password" name="password" placeholder="Enter your password">
+    <button onclick="toggle1()" id="button">close</button>
+  </div>
+
+  <div class="container" id="container">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="1 momument.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="2 monument.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="3 monument.jpg" />
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+
+    </div>
+
+    <div class="banner_blocks mobile_hide" style="font-size: 12px">
+      <div class="villages_block" style="font-size: 12px">
+        <div class="box_content" style="font-size: 12px">
+          <span class="font_30px" style="font-size: 30px">18,676</span><br />
+          <span class="uppercase" style="font-size: 12px">Villages</span>
+        </div>
+      </div>
+      <div class="map_block" style="font-size: 12px">
+        <div class="gujarat_map_block" style="font-size: 12px">&nbsp;</div>
+        <div class="map_text_block" style="font-size: 12px">
+          Gujarat<br />
+          196,024 sq. km area</div>
+      </div>
+      <div class="taluka_block" style="font-size: 12px">
+        <!--<a
+            href="https://ahmedabad.gujarat.gov.in/showpage.aspx?contentid=8"
+            title="Talukas"
+            style="font-size: 12px" -->
+        <div class="box_content" style="font-size: 12px">
+          <span class="font_30px" style="font-size: 30px">252</span><br />
+          <span class="uppercase" style="font-size: 12px">Talukas</span>
+        </div>
+        <div class="box_content2" style="font-size: 12px">
+          <span class="uppercase" style="font-size: 12px">View More</span>
+        </div></a>
+      </div>
+      <div class="population_block" style="font-size: 12px">
+        <!-- <a
+            href="https://ahmedabad.gujarat.gov.in/showpage.aspxcontentid=8"
+            title="Talukas"
+            style="font-size: 12px" -->
+        <div class="box_content" style="font-size: 12px">
+          <span class="font_30px" style="font-size: 30px">6.27</span>crores<br />
+          <span class="uppercase" style="font-size: 12px">Population</span>
+        </div>
+        <div class="box_content2" style="font-size: 12px">
+          <span class="uppercase" style="font-size: 12px">View More</span>
+        </div></a>
+      </div>
+      <div class="literacy_block" style="font-size: 12px">
+        <!-- <a
+            href="https://ahmedabad.gujarat.gov.in/showpage.aspx?contentid=8"
+            title="Talukas"
+            style="font-size: 12px" -->
+        <div class="box_content" style="font-size: 12px">
+          <span class="font_30px" style="font-size: 30px">83.79%</span><br />
+          <span class="uppercase" style="font-size: 12px">Literacy Rate</span>
+        </div>
+        <div class="box_content2" style="font-size: 12px">
+          <span class="uppercase" style="font-size: 12px">View More</span>
+        </div></a>
+      </div>
+      <div class="block_detail" style="font-size: 12px">
+        <div class="block_detail_content" style="font-size: 12px">
+          <div class="close_block" style="font-size: 12px">&nbsp;</div>
+          <h2 style="font-size: 18px">Gujarat at Glance</h2>
+          <p style="font-size: 12px">
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="image_row" style="font-size: 14px;">
+      <div class="image_container" style="width: 260px; font-size: 14px;">
+        <div class="inline_block vertical_top" style="font-size: 14px;"> <img draggable="false"
+            src="shri_bhupendra_patel.jpg" alt="Shri Bhupendrabhai Patel"
+            title="Shri Bhupendrabhai Patel, Hon'ble Chief Minister, Gujarat" style="font-size: 14px;">
+          <!--<img draggable="false" src="/assets/images/cm_gujarat.jpg" alt="Shri Vijay Rupani" title="Shri Vijay Rupani, Hon'ble Chief Minister, Gujarat" /><!--<img style="width:75px;height:106px;" draggable="false" src="/assets/images/dumi_image.jpg" alt="" title="" />
+    -->
+        </div>
+        <div class=" img_desciption" style="width: 124px; font-size: 12px;">
+          <div class="font_color_5 line_height_20px" style="min-height: 40px; font-size: 12px;">Shri Bhupendrabhai Patel
+          </div>
+          <div class=" font_color_6 line_height_18px" style="font-size: 12px;">Hon'ble Chief Minister, Gujarat</div>
+          <div class="" style="font-size: 12px;"><a href="https://www.facebook.com/ibhupendrapatel" target="_blank"
+              style="font-size: 12px;"><img style="box-shadow: none; margin: 0px; width: 50px; font-size: 12px;"
+                src="https://revenuedepartment.gujarat.gov.in/images/fb_icon.jpg" alt="Facebook"
+                title="facebook"></a>&nbsp;<a href="https://twitter.com/Bhupendrapbjp"
+              style="margin-left: 10px; font-size: 12px;" target="_blank"><img
+                style="box-shadow: none; margin: 0px; width: 50px; font-size: 12px;"
+                src="https://revenuedepartment.gujarat.gov.in/images/twitter_icon.jpg" alt="Twitter"
+                title="Twitter"></a> </div>
+        </div>
+      </div>
+      <hr class="mobile_display" style="margin: 10px; font-size: 14px;">
+      <div class="image_container" style="width: 260px; font-size: 14px;">
+        <div class="inline_block vertical_top" style="font-size: 14px;"><img draggable="false"
+            src="harsh_sanghavi.jpg" alt="-" title="-" style="font-size: 14px;">
+          <!--<img style="width:75px;height:106px;" draggable="false" src="/assets/images/dumi_image.jpg" alt="" title="" />
+    -->
+        </div>
+        <div class=" img_desciption" style="width: 124px; font-size: 12px;">
+          <div class="font_color_5 line_height_20px" style="min-height: 32px; font-size: 12px;">Shri Harsh Sanghavi
+          </div>
+          <div class=" font_color_6" style="line-height: 14px; font-size: 12px;">Hon'ble Minister of State Revenue,
+            Gov. of Gujarat</div>
+          <div class="" style="font-size: 12px;"><a href="https://www.facebook.com/sanghaviharsh" target="_blank"
+              style="font-size: 12px;"><img style="box-shadow: none; margin: 0px; width: 50px; font-size: 12px;"
+                src="https://revenuedepartment.gujarat.gov.in/images/fb_icon.jpg" alt="Facebook"
+                title="facebook"></a>&nbsp;<a href="https://twitter.com/sanghaviharsh" style=" font-size: 12px;"
+              target="_blank"><img style="box-shadow: none; margin: 0px; width: 50px; font-size: 12px;"
+                src="https://revenuedepartment.gujarat.gov.in/images/twitter_icon.jpg" alt="Twitter"
+                title="Twitter"></a> </div>
+          <div class="font_size_14 margin_top_10px" style="font-size: 12px;"> </div>
+        </div>
+      </div>
+      <hr class="mobile_display" style="margin: 10px; font-size: 14px;">
+      <div class="image_container" style="width: 260px; font-size: 14px;">
+        <div class="inline_block vertical_top" style="font-size: 14px;"> <img draggable="false"
+            src="Shri-Sandip-J-Sagale-IAS-main.jpg" alt="Shri Sandip J. Sagale, IAS"
+            title="Shri Sandip J. Sagale, IAS, Collector, Ahmedabad" style="font-size: 14px;"></div>
+        <div class=" img_desciption" style="width: 124px; font-size: 12px;">
+          <div class="font_color_5 line_height_20px" style="min-height: 35px; font-size: 12px;">Shri Sandip J. Sagale,
+            IAS</div>
+          <div class=" font_color_6 line_height_18px" style="font-size: 12px;">Collector Ahmedabad</div>
+          <div class="" style="font-size: 12px;"> <a class="readmore"
+              href="https://ahmedabad.gujarat.gov.in/showpage.aspx?contentid=7" style="font-size: 11px;">Read
+              Message</a><a href="https://twitter.com/CollectorAhd" style="font-size: 12px;" target="_blank"><img
+                style="box-shadow: none; margin: 0px; width: 50px; font-size: 12px;"
+                src="https://revenuedepartment.gujarat.gov.in/images/twitter_icon.jpg" alt="Twitter"
+                title="Twitter"></a> </div>
+          <div class="font_size_14 margin_top_10px" style="font-size: 12px;"> </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="span9" style="font-size: 14px;">
+      <h1 class="font_color_1" style="font-size: 20px;">Jan suvidha Kendra</h1>
+      <p style="font-size: 17px;">Common Service Centres (CSC) are physical facilities for delivering Government of
+        India e-Services to rural and remote locations where availability of computers and Internet was negligible or
+        mostly absent. They are multiple-services-single-point model for providing facilities for multiple transactions
+        at a single geographical location.
+
+        CSCs are the access points for delivery of essential public utility services, social welfare schemes,
+        healthcare, financial, education and agriculture services, apart from host of B2C services to citizens in rural
+        and remote areas of the country. It is a pan-India network catering to regional, geographic, linguistic and
+        cultural diversity of the country, thus enabling the Government's mandate of a socially, financially and
+        digitally inclusive society.<br><br>
+      </p>
+      <h2>Objectives</h2>
+      <ul>
+        <li>Access to information : all remote/ rural citizens</li>
+        <li>Delivery of public services – G2C & B2C</li>
+        <li>ICT for rural Empowerment of socially disadvantaged people for inclusive growth</li>
+        <li>Access to quality education / skill upgradation</li>
+        <li>Access to cost efficient & quality health services</li>
+        <li>CSC as a change agent - To promote rural entrepreneurship, enable community participation and effect
+          collective action for social improvement[</li>
+      </ul>
+    </div>
+    <div class="span2" style="font-size: 14px;"> <img alt="jan seva kendra"
+        src="janseva_logo.png" style="font-size: 14px;"> </div>
+
+    <div class="most-view">
+      <h2>Most Viewed</h2>
+      <ul class="branch">
+        <li>Website of Gandhinagar District Seeds Development Corporation</li>
+        <li>Web site of Ahmedabad jan seva portal</li>
+        <li>Information of Agricultural land in Gandhinagar</li>
+        <li>Website Of Vahan Parivahan</li><br>
+      </ul>
+
+      <h2>What's New</h2>
+      <ul class="branch">
+        <li>Website of Patan APMC</li>
+        <li>Website of Unja APMC</li>
+        <li>Website of Directorate of</li>
+      </ul>
+    </div>
+    <script src="home.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script type="text/javascript">
+      function toggle1() {
+        var blur = document.getElementById("blur");
+        blur.classList.toggle('active');
+      }
+      function toggle1() {
+        var popup = document.getElementById("popup");
+        popup.classList.toggle('active');
+      }
+    </script>
+
+</body>
+
+</html>

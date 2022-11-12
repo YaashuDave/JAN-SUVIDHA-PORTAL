@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="apply.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>jan suvidha portal</title>
+</head>
+<style>
+    .image-preview{
+     width: 150px;
+     min-height: 100px;
+     margin-left: 20px;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight: bold;
+     color: black;
+    }
+    .image-preview_image{
+     display: none;
+     width: 100%;
+    }
+
+ </style>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="Emblem_of_India.png" alt="Emblem of India">
+        </div>
+        <div class="title">
+            <h1>JAN SUVIDHA PORTAL</h1>
+            <h2>Collobrate-District Gandhinagar</h2>
+            <p>Goverment Of Gujarat</p>
+        </div>
+        <div class="logo-1">
+            <img src="har ghar tiranga.png" alt="Har Ghar Tiranga">
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="home.html" id="home" onclick="home()">Home</a></li>
+            <li>
+              <a href="aboutus.html" onclick="aboutus()">About Us</a>
+              <div class="apply-drp">
+                <ul>
+                  <li>
+                    <a class="dropdown-item" href="objective.html" onclick="objective()"
+                      >Objective</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="achivements.html" onclick="achivements()"
+                      >Achivements</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="photo.html" onclick="photo()"
+                      >Photo Gallery</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="aboutguj.html" onclick="aboutguj()"
+                      >About Gujarat</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li style="margin: 10px">
+              <a href="#">Apply <i class="bi bi-caret-down-fill"></i></a>
+              <div class="apply-drp">
+                <ul>
+                  <li>
+                    <a class="dropdown-item" href="health.html" onclick="health()">Health</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="agricultural.html" onclick="agriculture()"
+                      >Agriculture</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="education.html" onclick="education()"
+                      >Education</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="development.html" onclick="development()"
+                      >Rural Development</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="general.html" onclick="general()"
+                      >General</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="aplication.html" onclick="aplication()">View Application</a></li>
+            <!-- <li><a href="#" onclick="upload()">Dash board</a></li> -->
+            <li><a href="faq.html" onclick="faq()">FAQs</a></li>
+            <li><a href="map.html" onclick="map()">SITE Map</a></li>
+          </ul>
+    
+        <form class="searchbar" role="search">
+            <input class="search-input" type="search" placeholder="Search" aria-label="Search">
+            <button class="search-btn" type="submit">Search</button>
+        </form>
+    </nav>
+    <main class="container" id="container">
+        <div class="content">
+            <img src="C:\Users\vrajp\Documents\Azadi\apply\doctor.jpg" alt="health">
+            <h1>Health</h1><br>
+            <p>The state has about 7274 sub-centres, 1072 primary health centers (PHC), 253 community health centers
+                (CHC) that serve the primary, secondary and tertiary needs of the rural populace. There are 106 Urban
+                Family Welfare Centers. Some of them are run by NGO, trust, municipalities and municipal corporations.
+                There are 28 urban health posts.<br> he healthcare infrastructure in Gujarat is wide spread with 25
+                sub-district and 25 district hospitals. Besides these there are about 20 private speciality hospitals.
+                The healthcare infrastructure is also made up of private clinics and hospitals run by doctors
+                themselves. A majority of the population seeks treatment via these private practitioners. <br> There are
+                about 2528 allopathic hospitals in Gujarat, of which on 503 are under the state health department, which
+                indicates a extensively well developed private healthcare infrastructure within the state. These
+                hospitals are largely run by practising doctors or a group of them or trust and charitable institutions.
+            </p>
+        </div>
+
+        <table id="pbst" class="table table-striped table-bordered dataTable no-footer" role="grid"
+            aria-describedby="pbst_info">
+            <thead>
+                <tr role="row">
+                    <th style="text-align: center; font-size: 20px; width: 24.675px;" class="sorting_asc" tabindex="0"
+                        aria-controls="pbst" rowspan="1" colspan="1" aria-sort="ascending"
+                        aria-label=" Sr No. : activate to sort column descending"> Sr No. </th>
+                    <th style="text-align: center; font-size: 12px; width: 297.788px;" class="sorting" tabindex="0"
+                        aria-controls="pbst" rowspan="1" colspan="1"
+                        aria-label=" Problem statement : activate to sort column ascending"> Scheme </th>
+                    <th style="text-align: center; font-size: 12px; width: 88.775px;" class="sorting" tabindex="0"
+                        aria-controls="pbst" rowspan="1" colspan="1"
+                        aria-label=" Action : activate to sort column ascending"> Action </th>
+                    <th style="text-align: center; font-size: 12px; width: 88.775px;" class="sorting" tabindex="0"
+                        aria-controls="pbst" rowspan="1" colspan="1"
+                        aria-label=" Action : activate to sort column ascending"> Apply </th>
+                    <th style="text-align: center; font-size: 12px; width: 88.775px;" class="sorting" tabindex="0"
+                        aria-controls="pbst" rowspan="1" colspan="1"
+                        aria-label=" Action : activate to sort column ascending"> Document </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row" role="row">
+                    <td style="text-align: center;">1</td>
+                    <td style="text-align: center;">Aayushtamaan Card Yojana</td>
+                    <td style="text-align: center;"><button id="know-more" onclick="toggle()">Know More</button></td>
+                    <td style="text-align: center;"><button id="apply" onclick="toggle1()">Apply</button></td>
+                    <td style="text-align: center;"><button id="upload" onclick="upload()">Upload</button></td>
+                </tr>
+                <tr class="row" role="row">
+                    <td style="text-align: center;">2</td>
+                    <td style="text-align: center;">Ayush Mark Certificate Scheme</td>
+                    <td style="text-align: center;"><button id="know-more">Know More</button></td>
+                    <td style="text-align: center;"><button id="apply">Apply</button></td>
+                    <td style="text-align: center;"><button id="upload">Upload</button></td>
+                </tr>
+                <tr class="row" role="row">
+                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">Maa Amrutam Card Yojana</td>
+                    <td style="text-align: center;"><button id="know-more">Know More</button></td>
+                    <td style="text-align: center;"><button id="apply">Apply</button></td>
+                    <td style="text-align: center;"><button id="upload">Upload</button></td>
+                </tr>
+                <tr class="row" role="row">
+                    <td style="text-align: center;">4</td>
+                    <td style="text-align: center;">Chief Minister Rahat Fund</td>
+                    <td style="text-align: center;"><button id="know-more">Know More</button></td>
+                    <td style="text-align: center;"><button id="apply">Apply</button></td>
+                    <td style="text-align: center;"><button id="upload">Upload</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="popup" id="popup">
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="width:20.654;">Name:</td>
+                        <td style="width: 700px;">Aayushtamaan Card Yojana</td>
+                    </tr>
+                    <tr>
+                        <td style="width:20.654;">About:</td>
+                        <td style="width: 700px;">
+                            <p>PMJAY is also known as Ayushman Bharat Pradhan Mantri Jan Arogya Yojana Scheme, one of
+                                the biggest healthcare schemes that is sponsored by the Government of Inidia. Prime
+                                Minister, Narendra Modi rolled out Pradhan Mantri Jan Arogya Yojana healthcare scheme
+                                with an aim to cover more than 50 crore Indian citizens and nearly 10 Crore
+                                underprivileged families without any limitations pertaining to family size and age.
+                                Ayushman Bharat Yojana (PMJAY) will help these households avail the bet healthcare
+                                services with insurance coverage up to INR 5 lakh for each family per year for tertiary
+                                and secondary hospitalization expenses.
+
+                                PM Ayushman Bharat Yojana scheme is paperless and offers cashless hospitalization cover
+                                at public hospitals and network private hospitals. Ayushman Bharat health insurance
+                                covers the cost of hospitalization, pre-hospitalization, medication, and post
+                                hospitalization expenses incurred during the treatment, which is applicable to almost
+                                all tertiary and secondary care procedures.
+
+                                Moreover, Ayushman Bharat Yojana scheme includes nearly 1,400 exorbitant treatments like
+                                skull surgery, knee replacements, and the likewise. And the patients can also follow-up
+                                for the treatments to ensure full recovery. Read all about (PMJAY) Ayushman Bharat
+                                Yojana scheme features, eligibility criteria & application process imentioned below.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:20.654;">Eligiblity:</td>
+                        <td style="width: 700px;">
+                            <p>
+                                * PMJAY Scheme: Eligibility Criteria for Rural<br><br>
+                                . Household with no adult/male/ earning member within the age group of 16-59 years<br>
+                                . Families living in one room with Kuccha Kuccha walls and roof<br>
+                                . Families with no members within the age group of 16-59 years<br>
+                                . Household without a healthy adult member and one disabled member<br>
+                                . Manual scavenger families<br>
+                                . Landless households earning a major part of their family income from manual
+                                . labour<br><br>
+                                * PMJAY Scheme: Eligibility Criteria for Urban<br><br>
+                                . Domestic worker<br>
+                                . Beggar<br>
+                                . Ragpicker<br>
+                                . Home-based Artisans/ Tailor Sweeper/ Handicrafts worker/ Sanitation worker/ Mali<br>
+                                . Construction worker/ Labour/ Painter/ Welder/ Security guard/ Coolie<br>
+                                . Washer-man/ Plumber/ Mason<br>
+                                . Electrician/ Mechanic/ Assembler/ Repair worker<br>
+                                . Transport worker/ Rickshaw puller/ Conductor/ Cart puller/
+                                . Waiter/Shop worker/ Assistant/ Peon/Delivery assistant<br>
+                                . Street vendors/ hawker / Cobbler
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <button id="popup-end" onclick="toggle()">close</button>
+            </div>
+        </div>
+        <div id="login">
+            <form>
+                <label for="user-id">User-Id:</label>
+                <input type="text" id="user-id" placeholder="Enter your User-Id" required/>
+
+                <label for="person-id">person-Id:</label>
+                <input type="text" id="person-id" placeholder="Enter your person-Id" required/>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name"required/>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" placeholder="Enter your Age"required/>
+
+                <label for="aadhar">Aadharcard Numver:</label>
+                <input type="number" id="aadhar" placeholder=""required/>
+
+                <label for="gender">Gender:</label>
+                Male: <input type="radio" id="gender"required/>
+                Female: <input type="radio" id="gender"required/><br>
+
+                <label for="village">Village:</label>
+                <input type="text" id="village" placeholder="Enter Village name"required/>
+
+                <label for="taluka">Taluka:</label>
+                <input type="text" id="taluka" placeholder="Enter Taluka name"required/>
+
+                <label for="district">District:</label>
+                <input type="text" id="district" placeholder="Enter district name"required/>
+
+                <button id="popup-end" onclick="toggle1()">close</button>
+                <button id="popup-end">Submit</button>
+            </form>
+        </div>
+
+        <div id="upl">
+            <label for="Aadhaar">Aadhaar Card:</label>
+            <input type="file" name="inpFile" id="inpFile">
+            <div class="image-preview" id="imagepreview">
+              <img src="" alt="image preview" class="image-preview_image">
+                <span class="image-preview_default-text"></span>
+            </div>
+ 
+            <label for="Aadhaar">Pan Card:</label>
+            <input type="file" name="inpFile1" id="inpFile1">
+            <div class="image-preview" id="imagepreview1">
+              <img src="" alt="" class="image-preview_image1">
+                <span class="image-preview_default-text"></span>
+            </div>
+ 
+            <label for="Aadhaar">Last Qualification:</label>
+            <input type="file" name="inpFile2" id="inpFile2">
+            <div class="image-preview" id="imagepreview2">
+              <img src="" alt="" class="image-preview_image2">
+                <span class="image-preview_default-text"></span>
+            </div>
+ 
+            <label for="Aadhaar">Income Certificate:</label>
+            <input type="file" name="inpFile3" id="inpFile3">
+            <div class="image-preview" id="imagepreview3">
+              <img src="" alt="" class="image-preview_image3">
+                <span class="image-preview_default-text"></span>
+            </div>
+ 
+            <label for="Aadhaar">Photograph:</label>
+            <input type="file" name="inpFile4" id="inpFile4">
+            <div class="image-preview" id="imagepreview4">
+              <img src="" alt="" class="image-preview_image4">
+                <span class="image-preview_default-text"></span>
+            </div>
+ 
+            <label for="Aadhaar">Signature:</label>
+            <input type="file" name="inpFile5" id="inpFile5">
+            <div class="image-preview" id="imagepreview5">
+              <img src="" alt="" class="image-preview_image5">
+                <span class="image-preview_default-text"></span>
+            </div>
+         
+             <div>
+                 <button id="popup-end" onclick="upload()">close</button>
+             </div>
+             <div>
+                 <button id="popup-end" onclick="submit()">Submit</button>
+             </div>
+         </div>
+
+
+
+
+        <div class="most-view">
+            <h2>Most Viewed</h2>
+            <ul class="branch">
+                <li>Website of Gandhinagar District Seeds Development Corporation</li>
+                <li>Web site of Ahmedabad jan seva portal</li>
+                <li>Information of Agricultural land in Gandhinagar</li>
+                <li>Website Of Vahan Parivahan</li><br>
+            </ul>
+
+            <h2>What's New</h2>
+            <ul class="branch">
+                <li>Website of Patan APMC</li>
+                <li>Website of Unja APMC</li>
+                <li>Website of Directorate of</li>
+            </ul>
+        </div>
+    </main>
+    <script src="home.js"></script>
+    <script>
+        function toggle() {
+            var display = document.getElementById("grayscale");
+            display.classList.toggle('active');
+        }
+        function toggle() {
+            var popup = document.getElementById("popup");
+            popup.classList.toggle("active");
+        }
+        function toggle1() {
+            var display = document.getElementById("grayscale");
+            display.classList.toggle('active');
+        }
+        function toggle1() {
+            var login = document.getElementById("login");
+            login.classList.toggle("active");
+        }
+        function upload() {
+            var display = document.getElementById("grayscale");
+            display.classList.toggle('active');
+
+        }
+        function upload() {
+            // alert("working");
+            var upl = document.getElementById("upl");
+            upl.classList.toggle("active");
+
+        }
+        function submit() {
+            confirm("are you sure ypu have submitted all document correctlly ? ");
+            var display = document.getElementById("upl");
+            display.classList.toggle('active');
+        }
+    </script>
+    <script>
+        const inpFile = document.getElementById("inpFile");
+        const previewContainer = document.getElementById("imagepreview");
+        const previewImage = previewContainer.querySelector(".image-preview_image");
+        const previewDefaultText = previewContainer.querySelector(".image-preview_image");
+
+        inpFile.addEventListener("change",function(){
+            const file = this.files[0];
+
+            if(file){
+                const reader = new FileReader();
+
+                previewDefaultText.style.display = "none";
+                previewImage.style.display = "block";
+
+                reader.addEventListener("load", function(){
+                    previewImage.setAttribute("src",this.result);
+                });
+
+                reader.readAsDataURL(file);
+            }
+            else{
+                previewDefaultText.style.display = null;
+                previewImage.style.display = null;
+                previewImage.setAttribute("src","");
+            }
+        });
+
+        const inpFile1 = document.getElementById("inpFile1");
+        const previewContainer1 = document.getElementById("imagepreview1");
+        const previewImage1 = previewContainer.querySelector(".image-preview_image1");
+        const previewDefaultText1 = previewContainer.querySelector(".image-preview_image1");
+
+        inpFile1.addEventListener("change",function(){
+            const file = this.files[0];
+
+            if(file){
+                const reader = new FileReader();
+
+                previewDefaultText1.style.display = "none";
+                previewImage1.style.display = "block";
+
+                reader.addEventListener("load", function(){
+                    previewImage1.setAttribute("src",this.result);
+                });
+
+                reader.readAsDataURL(file);
+            }
+            else{
+                previewDefaultText1.style.display = null;
+                previewImage1.style.display = null;
+                previewImage1.setAttribute("src","");
+            }
+        });
+
+        const inpFile2 = document.getElementById("inpFile2");
+        const previewContainer2 = document.getElementById("imagepreview2");
+        const previewImage2 = previewContainer.querySelector(".image-preview_image2");
+        const previewDefaultText2 = previewContainer.querySelector(".image-preview_image2");
+
+        inpFile2.addEventListener("change",function(){
+            const file = this.files[0];
+
+            if(file){
+                const reader = new FileReader();
+
+                previewDefaultText2.style.display = "none";
+                previewImage2.style.display = "block";
+
+                reader.addEventListener("load", function(){
+                    previewImage2.setAttribute("src",this.result);
+                });
+
+                reader.readAsDataURL(file);
+            }
+            else{
+                previewDefaultText2.style.display = null;
+                previewImage2.style.display = null;
+                previewImage2.setAttribute("src","");
+            }
+        });
+
+        const inpFile3 = document.getElementById("inpFile3");
+        const previewContainer3 = document.getElementById("imagepreview3");
+        const previewImage3 = previewContainer.querySelector(".image-preview_image3");
+        const previewDefaultText3 = previewContainer.querySelector(".image-preview_image3");
+
+        inpFile3.addEventListener("change",function(){
+            const file = this.files[0];
+
+            if(file){
+                const reader = new FileReader();
+
+                previewDefaultText3.style.display = "none";
+                previewImage3.style.display = "block";
+
+                reader.addEventListener("load", function(){
+                    previewImage3.setAttribute("src",this.result);
+                });
+
+                reader.readAsDataURL(file);
+            }
+            else{
+                previewDefaultText3.style.display = null;
+                previewImage3.style.display = null;
+                previewImage3.setAttribute("src","");
+            }
+        });
+
+        const inpFile4 = document.getElementById("inpFile4");
+        const previewContainer4 = document.getElementById("imagepreview4");
+        const previewImage4 = previewContainer.querySelector(".image-preview_image4");
+        const previewDefaultText4 = previewContainer.querySelector(".image-preview_image4");
+
+        inpFile4.addEventListener("change",function(){
+            const file = this.files[0];
+
+            if(file){
+                const reader = new FileReader();
+
+                previewDefaultText4.style.display = "none";
+                previewImage4.style.display = "block";
+
+                reader.addEventListener("load", function(){
+                    previewImage4.setAttribute("src",this.result);
+                });
+
+                reader.readAsDataURL(file);
+            }
+            else{
+                previewDefaultText4.style.display = null;
+                previewImage4.style.display = null;
+                previewImage4.setAttribute("src","");
+            }
+        });
+
+        const inpFile5 = document.getElementById("inpFile5");
+        const previewContainer5 = document.getElementById("imagepreview5");
+        const previewImage5 = previewContainer.querySelector(".image-preview_image5");
+        const previewDefaultText5 = previewContainer.querySelector(".image-preview_image5");
+
+        inpFile5.addEventListener("change",function(){
+            const file = this.files[0];
+
+            if(file){
+                const reader = new FileReader();
+
+                previewDefaultText5.style.display = "none";
+                previewImage5.style.display = "block";
+
+                reader.addEventListener("load", function(){
+                    previewImage5.setAttribute("src",this.result);
+                });
+
+                reader.readAsDataURL(file);
+            }
+            else{
+                previewDefaultText5.style.display = null;
+                previewImage5.style.display = null;
+                previewImage5.setAttribute("src","");
+            }
+        });
+    </script>
+    
+
+
+</body>
+
+</html>
